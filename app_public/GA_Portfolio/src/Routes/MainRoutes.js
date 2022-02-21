@@ -10,7 +10,7 @@ import Contact from '../Pages/Contact';
 
 function MainRoutes() {
    return (
-      <Router>
+      <Router basename="dhruvipatel.xyz">
          <Header />
          <Route exact path="/">
             <Home />
