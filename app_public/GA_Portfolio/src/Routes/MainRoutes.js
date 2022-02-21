@@ -10,7 +10,7 @@ import Contact from '../Pages/Contact';
 
 function MainRoutes() {
    return (
-      <Router basename="/">
+      <Router>
          <Header />
          <Route exact path="/">
             <Home />
