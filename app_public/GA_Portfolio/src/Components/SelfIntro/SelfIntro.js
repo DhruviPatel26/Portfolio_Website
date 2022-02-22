@@ -41,7 +41,7 @@ function SelfIntro() {
           </Col>
           <Col md={3} className="myAvtar">
             <Tilt>
-              <img src={myImg} style={{ marginLeft: "50px" }} className="img-fluid" alt="myself" borderRadius="30%" />
+              <img src={myImg} className="img-fluid" alt="myself_images" borderRadius="30%" />
             </Tilt>
           </Col>
         </Row>

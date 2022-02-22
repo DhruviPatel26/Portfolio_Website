@@ -59,39 +59,33 @@ class Address extends React.Component {
       });
   }
   render() {
-    const mystyle = {
-      marginTop: "20px"
-    };
-    const mybtn = {
-      color: "white",
-      margin: "auto",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      marginTop: "20px"
-    };
+
+
     return (
-      <div className="App">
+      <div className="App" >
         <Col md={12} className="address"></Col>
         <Col md={12} className="contact-image-container">
-          <img className="contact-image" src={call} alt="" />{" "}
+          <img className="contact-image" src={call} alt="Contact banner image" />{" "}
           <h1 style={{ color: "#fff", textAlign: "center", padding: "30px" }}>Contact Me</h1>
         </Col>
 
         <form id="contact-form" onSubmit={this.onSubmit}>
           <div className="form-group">
             {/* <label style={mystyle} htmlFor="name">Name</label> */}
-            <input style={mystyle} type="text" className="form-control" name="name" value={this.state.name} onChange={this.onChangeName} required placeholder="Name"></input>
+            <input type="text" className="form-control" name="name" value={this.state.name} onChange={this.onChangeName} required placeholder="Name"></input>
           </div>
           <div className="form-group">
             {/* <label style={mystyle} htmlFor="exampleInputEmail1">Email address</label> */}
-            <input style={mystyle} type="email" className="form-control" name="email" value={this.state.email} onChange={this.onChangeEmail} required placeholder="Email"></input>
+            <input type="email" className="form-control" name="email" value={this.state.email} onChange={this.onChangeEmail} required placeholder="Email"></input>
           </div>
           <div className="form-group">
             {/* <label style={mystyle} htmlFor="message">Message</label> */}
-            <textarea style={{ marginTop: "20px", height: "150px" }} name="message" className="form-control" value={this.state.message} onChange={this.onChangeMessage} required placeholder="Write your message here"></textarea>
+            <textarea name="message" className="form-control" value={this.state.message} onChange={this.onChangeMessage} required placeholder="Write your message here"></textarea>
           </div>
-          <button style={mybtn} type="submit" className="btn btn-primary">Submit</button>
+          <div className="form-group" id='btnsubmit'>
+            <button type="submit" className="btn btn-primary">Submit</button>
+          </div>
+
         </form>
         <p style={{ color: "#4fff82", display: "flex", justifyContent: "center", paddingTop: "30px" }} className="successMsg">{this.state.successMsg}</p>
         <Col md={12} className="home-about-social">
