@@ -5,7 +5,7 @@ import Address from '../Components/Address/Address'
 
 function Contact() {
     return (
-        <Container style={{ width: "50%" }} >
+        <Container>
             <Address />
         </Container>
     )
