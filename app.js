@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const cors = require('cors');
 
 require('./app_api/models/db');
 
@@ -20,15 +21,19 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'app_public', 'GA_Portfolio/build')));
 
-app.use("/api", function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "https://dhruvipatel.xyz");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  res.header("Access-Control-Allow-Methods", "PUT, POST, GET, DELETE, OPTIONS");
-  next();
-});
+// app.use("/api", function (req, res, next) {
+//   res.header("Access-Control-Allow-Origin", "https://dhruvipatel.xyz");
+//   res.header(
+//     "Access-Control-Allow-Headers",
+//     "Origin, X-Requested-With, Content-Type, Accept"
+//   );
+//   res.header("Access-Control-Allow-Methods", "PUT, POST, GET, DELETE, OPTIONS");
+//   next();
+// });
+
+app.use(cors({
+  origin: 'https://dhruvipatel.xyz'
+}));
 
 app.use('/api', apiRoutes);
 
