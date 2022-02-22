@@ -21,7 +21,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'app_public', 'GA_Portfolio/build')));
 
 app.use("/api", function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "https://portfolio-dhruvi.herokuapp.com");
+  res.header("Access-Control-Allow-Origin", "https://dhruvipatel.xyz");
   res.header(
     "Access-Control-Allow-Headers",
     "Origin, X-Requested-With, Content-Type, Accept"
