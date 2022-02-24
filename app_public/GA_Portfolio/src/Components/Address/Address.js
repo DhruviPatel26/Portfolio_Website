@@ -54,6 +54,9 @@ class Address extends React.Component {
     axios.post('https://portfolio-dhruvi.herokuapp.com/api/contact', userData)
       .then(res => {
         this.setState({
+          name: '',
+          email: '',
+          message: '',
           successMsg: "Thank you. I got your message. I will get back shortly."
         });
       });
