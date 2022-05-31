@@ -19,6 +19,15 @@ function Projects() {
           <Col md={6} className="project-card">
             <ProjectCards
 
+              imgPath="/images/project7.png"
+              title="Crack Expense"
+              // description="Flipkart is one of the best and trending eCommerce sites with a presence throughout India. The online shopping website is for Buying and Selling products online within the network.Sijeesh Miziha's Flipkart clone is a ready-made remarkable multi-vendor eCommerce site Entrepreneurs can start their own business like Flipkart, it has RazorPay Integration and get money from anywhere, in mobile, web, and iOS platforms, Completely responsive design using Material UI."
+              link="https://github.com/DhruviPatel26?tab=repositories"
+            />
+          </Col>
+          <Col md={6} className="project-card">
+            <ProjectCards
+
               imgPath="/images/project1.png"
               title="PDT Technologies"
               // description="Flipkart is one of the best and trending eCommerce sites with a presence throughout India. The online shopping website is for Buying and Selling products online within the network.Sijeesh Miziha's Flipkart clone is a ready-made remarkable multi-vendor eCommerce site Entrepreneurs can start their own business like Flipkart, it has RazorPay Integration and get money from anywhere, in mobile, web, and iOS platforms, Completely responsive design using Material UI."
